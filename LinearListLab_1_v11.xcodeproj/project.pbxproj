@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F98895E2ED4B9D7001E353A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F98895D2ED4B9D7001E353A /* main.cpp */; };
+		4F9889712ED4C2DF001E353A /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F9889702ED4C2DF001E353A /* LinkedList.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4F9889582ED4B9D7001E353A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,15 +25,11 @@
 
 /* Begin PBXFileReference section */
 		4F98895A2ED4B9D7001E353A /* LinearListLab_1_v11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinearListLab_1_v11; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F98895D2ED4B9D7001E353A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F9889702ED4C2DF001E353A /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		4F9889722ED4C46E001E353A /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		4F9889732ED4C511001E353A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F98895C2ED4B9D7001E353A /* LinearListLab_1_v11 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LinearListLab_1_v11;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4F9889572ED4B9D7001E353A /* Frameworks */ = {
@@ -44,8 +45,13 @@
 		4F9889512ED4B9D7001E353A = {
 			isa = PBXGroup;
 			children = (
-				4F98895C2ED4B9D7001E353A /* LinearListLab_1_v11 */,
+				4F98896B2ED4C181001E353A /* examples */,
 				4F98895B2ED4B9D7001E353A /* Products */,
+				4F9889692ED4C144001E353A /* LinearListLab_1_v11 */,
+				4F9889672ED4C10C001E353A /* docs */,
+				4F9889722ED4C46E001E353A /* LinkedList.h */,
+				4F9889702ED4C2DF001E353A /* LinkedList.cpp */,
+				4F98895D2ED4B9D7001E353A /* main.cpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,36 @@
 				4F98895A2ED4B9D7001E353A /* LinearListLab_1_v11 */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4F9889672ED4C10C001E353A /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				4F9889732ED4C511001E353A /* README.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		4F9889692ED4C144001E353A /* LinearListLab_1_v11 */ = {
+			isa = PBXGroup;
+			children = (
+				4F98896A2ED4C164001E353A /* Info.plist */,
+			);
+			path = LinearListLab_1_v11;
+			sourceTree = "<group>";
+		};
+		4F98896A2ED4C164001E353A /* Info.plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		4F98896B2ED4C181001E353A /* examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4F98895C2ED4B9D7001E353A /* LinearListLab_1_v11 */,
 			);
 			name = LinearListLab_1_v11;
 			packageProductDependencies = (
@@ -120,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9889712ED4C2DF001E353A /* LinkedList.cpp in Sources */,
+				4F98895E2ED4B9D7001E353A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
