@@ -2,14 +2,6 @@
 #include "LinkedList.h"
 using namespace std;
 
-struct Node {
-  int data; //для числа
-  Node* prev; //адрес назад
-  Node* next; //вперед
-  
-  Node(int value) : data(value), prev(nullptr), next(nullptr) {}
-};
-
 // Добавление элемента в конец
 void addElement(Node*& head, int value) {
     Node* newNode = new Node(value);
@@ -82,7 +74,7 @@ Node* findNode(Node* head, int c) {
       if (current->data == c) return current;
       current = current->next;
   }
-  return nullptr; //по условию c есть
+  return nullptr;
 }
 
 pair<Node*, Node*> splitList(Node* head, int c) {
@@ -99,9 +91,9 @@ pair<Node*, Node*> splitList(Node* head, int c) {
           list1 = newNode;
           list1Tail = newNode;
       } else {
-          newNode->next = list1;
-          list1->prev = newNode;
-          list1 = newNode;
+          list1Tail->next = newNode;  // Добавляем в конец
+          newNode->prev = list1Tail;
+          list1Tail = newNode;
       }
       current = current->prev;
   }

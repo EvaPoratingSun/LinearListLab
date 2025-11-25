@@ -8,7 +8,7 @@ struct Node {
     int data;
     Node* prev;
     Node* next;
-    Node(int value);
+    Node(int value) : data(value), prev(nullptr), next(nullptr) {}
 };
 
 class LinkedList {
